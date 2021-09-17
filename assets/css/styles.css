@@ -2,17 +2,46 @@
 @import url("./reset.css");
 @import "./reset.css";
 @import "./fonts.css";
-@import "./print_style.css" print;
-@import "./screen_style.css" screen;
-@import "./common_style.css" all;
+@import "./section.css";
 
 :root {
   font-size: 22px;
 }
-
-h1 {
-  font-size: 3rem;
+@media print {
+  h1 {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+  }
 }
-h2 {
-  font-size: 3rem;
+@media (max-width: 576px) {
+  h1 {
+    border: 1px dotted darkcyan;
+    font-size: 1rem;
+  }
 }
+@media (min-width: 576px) {
+   h1 {
+     border: 1px dotted red;
+     font-size: 1rem;
+   }
+ }
+@media (min-width: 768px) {
+   h1 {
+     border: 1px solid darkcyan;
+     font-size: 1rem;
+   }
+ }
+ @media (min-width: 992px) {
+   h1 {
+     border: none;
+     font-size: 1rem;
+   }
+ }
+/*  [320,576] - small smartphones
+768 [576,768] - regular smart
+992 [768,992] - tablets
+1200 [992,1200] - desctop laptop
+1400  [1200,1400] - desctop
+ [1400,] - desctop large
+*/
