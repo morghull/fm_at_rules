@@ -1,0 +1,12 @@
+:root{
+   font-size: 48px;
+}
+ul{
+   margin: 0;
+   padding: 0;
+   font-size: 18px;
+}
+li{
+   display: inline-block;
+   font-size: 1rem;
+}
